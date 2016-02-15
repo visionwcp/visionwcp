@@ -1,0 +1,450 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: #5c5c5c;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+p {
+  clear: both;
+  color: #5c5c5c;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif;
+}
+
+span {
+  font-weight: bold;
+  font-size: .85em;
+  color: #48525c;
+}
+
+h1 {  
+  font-size: 3rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 1px 1px rgba(0,0,0, 0.8);
+  margin: 12px 0 0;
+}
+
+h2 {
+  font-size: 2em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  display: block;
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+h4 {
+  margin: 20px 0px;
+}
+
+h6 {
+  margin: 10px 0px;
+  color: #48525c;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+  padding: 5px;
+}
+
+/* Pseudo-classes ------------------ */
+
+.nav-section a:link {
+  color: #666;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-section a:visited {
+  color: #666;
+  display: block;
+}
+
+.nav-section a:hover {
+  color: #666;
+  display: block;
+}
+
+.nav-section a.selected {
+  color: #fff;
+  display: block;
+}
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 169, 73);
+}
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+.selected a {
+  color: white !important;
+}
+
+.selected {
+  display: block;
+  background-color: #cc3300 !important;
+}
+/* Main Styles --------------------- */
+.main-header {
+  background: linear-gradient(#333, transparent 90%),
+              linear-gradient(0deg, #333, transparent 90%),
+              #ffa949 url('../img/map.png') no-repeat center;
+  height: 50vh;
+  width: 100%;
+  padding: 50px;
+  background-size: cover;
+}
+
+.nav-section {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #333, transparent);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 52px;
+    
+}
+
+.nav-section li {
+    float: left; 
+}
+
+.nav-section a {
+    display: inline-block;
+    color: white !important;
+    text-align: center;
+    padding: 10px 16px 10px 16px;
+    text-decoration: none;
+}
+
+.nav-section li:hover {
+  background-color: #111;
+}
+
+.primary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.secondary-content {
+  width: 90%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.block-l {
+  margin-top: 25px;
+  float: left;
+  width: 60%;
+  padding: 10px;
+  box-shadow: 2px 2px 2px gray;
+  background-color: white;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+
+.stars-r {
+  width: 40%;
+  float: right;
+  padding-top: 50px;
+  padding-left: 50px;
+  display: inline-block;
+  clear: both;
+}
+
+.stars-r img {
+  float: center;
+  width: 75%;
+  clear: both;
+}
+
+.stars-l {
+  width: 40%;
+  float: left;
+  padding-top: 50px;
+  padding-right: 50px;
+  display: inline-block;
+  clear: both;
+}
+
+.stars-l img {
+  width: 75%;
+  float: right;
+  clear: both;
+}
+
+.block-r {
+  margin-top: 25px;
+  float: right;
+  width: 60%;
+  padding: 10px;
+  box-shadow: 2px 2px 2px gray;
+  background-color: white;
+  border-radius: 4px;
+}
+
+footer {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.biodegradable {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.biodegradable p {
+  float: right;
+}
+
+.biodegradable img {
+  height: 75px;
+  float: left;
+}
+
+.profile {
+  clear: both;
+  display: inline-block;
+  width: 125px;
+  margin-right: -35px;
+}
+
+.thumbtack {
+  display: inline-block;
+}
+
+.col-l {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  clear: both;
+  padding: 20px;
+  border-right: 2px solid gray;
+  margin-top: 10px;
+}
+
+.col-r {
+  margin-top: 10px;
+  display: inline-block;
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
+/* Functions */
+/*Clases that are used throughout to preform basic functions to elements*/
+.media-only {
+  display: none;
+}
+
+.right {
+  float: right;
+  display: inline;
+}
+
+.left {
+  float: left;
+  display: inline;
+}
+
+.nav-show {
+  display: none;
+}
+
+.nav-hide {
+  display: none;
+}
+
+.thumb {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px
+}
+
+.space-s {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.space-t {
+  margin-top: 20px !important;
+}
+
+.space-b {
+  margin-bottom: 20px !important;
+}
+/*makes a space between buttons or images*/
+.latest {
+  display: inline;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.center-b {
+  margin: auto;
+  text-align: center;
+}
+.radial-b {
+  border-radius: 7px;
+}
+
+.radial {
+  border-radius: 50%;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.nav:not(first-child) {
+  margin-left: 10px;
+
+}
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+.border-b {
+  border-bottom: 2px solid #dfe2e6;
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+  }
+
+  .col-l {
+    width: 100%;
+    float: none;
+    border-right: none;
+  }
+
+  .col-r {
+    width: 100%;
+    float: none;
+  }
+
+  .block-l,
+  .block-r {
+    width: 100%;
+  }
+
+  .stars-l,
+  .stars-r,
+  .stars {
+    display: none;
+  }
+
+  .star-m {
+    display: inline-block;
+    margin: 0 10px;
+    height: 20px;
+    width: 80px;
+    background: url('../img/five-stars.png') no-repeat;
+    background-size: contain;
+    clear: both;
+    float: right;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .nav-section a {
+    padding: 10px 10px;
+    font-size: .75em
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-section a {
+    padding: 10px 0px;
+    font-size: .75em
+  }
+}
+
+
+/*Pseudo Classes*/
+
+
